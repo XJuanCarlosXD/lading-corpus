@@ -64,7 +64,7 @@ const Contact = (props) => {
           <div className="w-full mt-7">
             <textarea
               title="Comentario"
-              className="block w-full h-28 p-2 text-sm text-gray-900 border-b border-t border-s border-lightGray bg-gray-50 focus:border-darkGray"
+              className="block w-full h-28 p-2 text-sm text-gray-900 border-b border border-lightGray bg-gray-50 focus:border-darkGray"
             />
           </div>
         </div>

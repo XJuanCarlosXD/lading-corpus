@@ -50,7 +50,7 @@ const Planes = (props) => {
           {planList.map((row, index) => (
             <div className="w-full lg:w-80" key={index}>
               <div className="h-20 md:h-32 lg:h-36 bg-darkGray flex justify-center items-center text-center uppercase">
-                <h4 className="text-lightGray font-bold text-sm md:text-md lg:text-md">
+                <h4 className="text-white font-bold text-sm md:text-md lg:text-md">
                   {row.name.split("\n").map((paragraph, pIndex) => (
                     <React.Fragment key={pIndex}>
                       {paragraph}
@@ -90,7 +90,7 @@ const Planes = (props) => {
           {animalList.map((row, index) => (
             <div className="w-full lg:w-80" key={index}>
               <div className="h-20 md:h-32 lg:h-36 bg-darkGray flex justify-center items-center text-center uppercase">
-                <h4 className="text-lightGray font-bold text-sm md:text-md lg:text-md">
+                <h4 className="text-white font-bold text-sm md:text-md lg:text-md">
                   {row.name.split("\n").map((paragraph, pIndex) => (
                     <React.Fragment key={pIndex}>
                       {paragraph}

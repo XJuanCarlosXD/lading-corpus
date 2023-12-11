@@ -23,7 +23,7 @@ const Carucel = (props) => {
             controlado.
           </p>
           <Link
-            className="uppercase font-extrabold text-lightGray bg-white lg:p-3 p-1.5 rounded-full lg:px-8 px-4 lg:text-md text-xs"
+            className="uppercase font-extrabold text-darkGray bg-white lg:p-3 p-1.5 rounded-full lg:px-8 px-4 lg:text-md text-xs"
             to={"/contiza"}
           >
             Cotizar
