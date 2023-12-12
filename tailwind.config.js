@@ -7,6 +7,8 @@ module.exports = {
         darkGray: "#231f20",
         lightGray: "#918f8f",
         gray: "#3d3a3b",
+        green_logo: "#2BEF1C",
+        blue_logo: "#55717F",
       },
       height: {
         custom: "36rem",
@@ -17,7 +19,8 @@ module.exports = {
         custom_lg: "50rem",
       },
       fontFamily: {
-        sans: ["Open Sans", "Helvetica", "Arial", "sans-serif"],
+        stay: ["Stay And Shine", "sans-serif"],
+        sanchez: ["Sanchez", "sans-serif"],
       },
     },
   },

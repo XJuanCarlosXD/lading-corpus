@@ -7,10 +7,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
         <Routes>
-          <Route path="/" index element={<Home />} />
-          <Route path="contiza" element={<Cotizacion />} />
+          <Route path="/" element={<Navbar />}>
+            <Route index element={<Home />} />
+            <Route path="contiza" element={<Cotizacion />} />
+          </Route>
         </Routes>
       </Router>
     </div>
