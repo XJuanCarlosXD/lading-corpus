@@ -6,7 +6,7 @@ const Footer = (props) => {
       <div className="flex flex-col justify-center items-center w-full bg-darkGray text-white">
         <div className="flex lg:flex-row md:flex-row flex-col justify-between items-center lg:p-16 md:p-16 p-8 w-full gap-6">
           <div className="flex flex-col justify-start items-start lg:w-custom">
-            <h2 className="font-extrabold text-xl">Sobre Nosotros</h2>
+            <h2 className="font-bold font-poppins text-xl">Sobre Nosotros</h2>
             <p className="lg:text-lg md:text-md text-xs font-extralight">
               Nuestra misión consiste en proteger, vigilar y custodiar mediante
               servicios integrales, a todas las entidades físicas y/o jurídicas
@@ -22,7 +22,7 @@ const Footer = (props) => {
             </div>
           </div>
           <div className="w-full lg:w-custom">
-            <h2 className="font-extrabold text-xl">Subscribete</h2>
+            <h2 className="font-bold font-poppins text-xl">Subscribete</h2>
             <p className="lg:text-lg md:text-md text-xs">
               Subscribete a nuestro newsletter y mantente al tanto de ofertas
             </p>

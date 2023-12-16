@@ -1,19 +1,42 @@
 import React from "react";
 
 const Contact = (props) => {
-  const listImg = ["location.png", "telefon.png", "horario.png"];
+  const listContac = [
+    {
+      name: "Santo Domingo, R.D.",
+      sub: "Corpus Security",
+      icon: "location.svg",
+    },
+    { name: "(809) 696-4963", sub: "Número de Teléfono", icon: "phone.svg" },
+    { name: "Horario", sub: "Lun-Vier 9am - 6pm", icon: "clock.svg" },
+  ];
   return (
     <div>
       <div className="lg:p-36 md:p-36 p-8 lg:pt-24 md:pt-24 pt-12 flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center mb-2">
-          <h2 className="font-extrabold text-md md:text-2xl lg:text-4xl">
+          <h2 className="font-bold font-poppins text-md md:text-2xl lg:text-4xl">
             Contáctanos
           </h2>
           <div className="border border-lightGray lg:mb-4 md:mb-4  lg:w-28 md:w-26 w-16 lg:mt-2 md:mt-2 mt-1" />
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:justify-center lg:items-center lg:mb-4 md:mb-4 mb-2 lg:gap-0 md:gap-0 gap-3">
-          {listImg.map((x, index) => (
-            <img key={index} src={"/images/" + x} className="w-full" alt={x} />
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:mb-4 md:mb-4 mb-2 lg:gap-0 md:gap-2 gap-2 md:place-items-center lg:place-items-center w-full">
+          {listContac.map((row, index) => (
+            <div key={index} className="flex flex-row gap-2 items-center">
+              <img
+                key={index}
+                src={"/images/" + row.icon}
+                className={`w-10 border-dashed border border-lightGray ${
+                  index === 0 && "pl-2 pr-0"
+                } p-1`}
+                alt={row.icon}
+              />
+              <div>
+                <p className="text-xs text-lightGray font-normal">{row.sub}</p>
+                <h2 className="text-darkGray text-sm font-normal font-poppins leading-relaxed">
+                  {row.name}
+                </h2>
+              </div>
+            </div>
           ))}
         </div>
         <div className="flex w-full lg:flex-row md:flex-row flex-col gap-4">

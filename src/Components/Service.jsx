@@ -26,7 +26,7 @@ const Service = (props) => {
     <div>
       <div className="w-full bg-darkGray lg:p-36 md:p-32 p-8 flex flex-col justify-center items-center text-white">
         <div className="flex flex-col justify-center items-center lg:mb-10 mb-5">
-          <h2 className="font-extrabold text-md md:text-2xl lg:text-4xl">
+          <h2 className="font-bold font-poppins text-md md:text-2xl lg:text-4xl">
             Nuestros Servicios
           </h2>
           <div className="border-b border-white lg:w-2/6 w-8/12 mt-2" />
@@ -40,7 +40,9 @@ const Service = (props) => {
               <div>
                 <img src={row.img} alt={row.name} className="w-96 h-52" />
               </div>
-              <h4 className="text-lightGray font-bold text-xl">{row.name}</h4>
+              <h4 className="text-white font-poppins font-bold text-xl">
+                {row.name}
+              </h4>
               <div className="lg:text-sm md:text-sm text-xs font-extralight">
                 {row.text.split("\n").map((paragraph, pIndex) => (
                   <React.Fragment key={pIndex}>

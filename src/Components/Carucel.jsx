@@ -8,22 +8,22 @@ const Carucel = (props) => {
         <img
           src="/images/image_inicio1.png"
           alt="carusel"
-          className="w-full h-72 lg:h-custom"
+          className="w-full h-96 lg:h-custom"
         />
-        <div className="absolute lg:top-10 top-0 lg:p-20 p-8 text-white ">
-          <h2 className="lg:text-6xl text-4xl">
+        <div className="absolute lg:top-10 md:top-0 top-0 lg:p-20 md:p-16 p-8 text-white">
+          <h2 className="lg:text-6xl md:text-6xl text-4xl font-poppins">
             Somos <span className="text-lightGray font-bold">Corpus</span>{" "}
             <br /> Security
           </h2>
           <div className="border-b border-white lg:pt-4 pt-2 w-56" />
-          <p className="font-extralight lg:w-custom lg:text-sm text-xs lg:pt-6 pt-2 lg:mb-6 mb-4">
+          <p className="font-extralight lg:w-custom md:w-96 lg:text-sm md:text-md text-xs lg:pt-6 pt-2 lg:mb-6 mb-4">
             Una empresa de seguridad privada que ofrece servicios integrales de
             protección a empresas, personas, eventos, condominios y residencias,
             como también la vigilancia para tener un perímetro y ambiente
             controlado.
           </p>
           <Link
-            className="uppercase font-extrabold text-darkGray bg-white lg:p-3 p-1.5 rounded-full lg:px-8 px-4 lg:text-md text-xs"
+            className="uppercase font-poppins font-semibold text-darkGray bg-white lg:p-3 p-1.5 rounded-full lg:px-8 px-4 lg:text-md text-xs"
             to={"/contiza"}
           >
             Cotizar

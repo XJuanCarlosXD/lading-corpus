@@ -41,7 +41,7 @@ const Planes = (props) => {
         id="planes"
       >
         <div className="flex flex-col justify-center items-center">
-          <h2 className="font-extrabold text-md md:text-2xl lg:text-4xl">
+          <h2 className="font-bold font-poppins text-md md:text-2xl lg:text-4xl">
             Planes de Vigilancia y Monitoreo
           </h2>
           <div className="border-b border-lightGray lg:w-96 w-64 mt-2" />
@@ -50,7 +50,7 @@ const Planes = (props) => {
           {planList.map((row, index) => (
             <div className="w-full lg:w-80" key={index}>
               <div className="h-20 md:h-32 lg:h-36 bg-darkGray flex justify-center items-center text-center uppercase">
-                <h4 className="text-white font-bold text-sm md:text-md lg:text-md">
+                <h4 className="text-white font-bold text-sm md:text-md lg:text-md font-poppins">
                   {row.name.split("\n").map((paragraph, pIndex) => (
                     <React.Fragment key={pIndex}>
                       {paragraph}
@@ -81,7 +81,7 @@ const Planes = (props) => {
           ))}
         </div>
         <div className="flex flex-col justify-center items-center w-full">
-          <h2 className="font-extrabold text-md md:text-2xl lg:text-4xl">
+          <h2 className="font-bold font-poppins text-md md:text-2xl lg:text-4xl">
             Planes de Agentes de Seguridad Privada
           </h2>
           <div className="border-b border-lightGray lg:w-96 w-64 mt-2" />
@@ -90,7 +90,7 @@ const Planes = (props) => {
           {animalList.map((row, index) => (
             <div className="w-full lg:w-80" key={index}>
               <div className="h-20 md:h-32 lg:h-36 bg-darkGray flex justify-center items-center text-center uppercase">
-                <h4 className="text-white font-bold text-sm md:text-md lg:text-md">
+                <h4 className="text-white font-bold text-sm md:text-md lg:text-md font-poppins">
                   {row.name.split("\n").map((paragraph, pIndex) => (
                     <React.Fragment key={pIndex}>
                       {paragraph}
