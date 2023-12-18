@@ -16,7 +16,7 @@ const Service = (props) => {
     Transportación y custodia de valores.`,
     },
     {
-      name: "Vigilacia",
+      name: "Vigilancia",
       img: "/images/vigilacia.png",
       text: `Alarmas y control de accesos \n
     Vigilancia a través de circuito cerrado de cámaras`,

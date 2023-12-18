@@ -43,7 +43,7 @@ const About = (props) => {
                     index === 5 && "py-0 px-0"
                   } lg:p-2 md:p-2 p-1`}
                 />
-                <h2 className="font-bold font-poppins lg:text-lg md:text-lg text-md truncate">
+                <h2 className="font-bold font-poppins_regular lg:text-lg md:text-lg text-md truncate">
                   {row.name}
                 </h2>
               </div>

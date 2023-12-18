@@ -32,7 +32,7 @@ const Contact = (props) => {
               />
               <div>
                 <p className="text-xs text-lightGray font-normal">{row.sub}</p>
-                <h2 className="text-darkGray text-sm font-normal font-poppins leading-relaxed">
+                <h2 className="text-darkGray text-sm font-normal font-poppins_regular leading-relaxed">
                   {row.name}
                 </h2>
               </div>

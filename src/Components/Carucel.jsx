@@ -11,8 +11,8 @@ const Carucel = (props) => {
           className="w-full h-96 lg:h-custom"
         />
         <div className="absolute lg:top-10 md:top-0 top-0 lg:p-20 md:p-16 p-8 text-white">
-          <h2 className="lg:text-6xl md:text-6xl text-4xl font-poppins">
-            Somos <span className="text-lightGray font-bold">Corpus</span>{" "}
+          <h2 className="lg:text-6xl md:text-6xl text-4xl font-poppins_regular">
+            Somos <span className="text-lightGray font-poppins">Corpus</span>{" "}
             <br /> Security
           </h2>
           <div className="border-b border-white lg:pt-4 pt-2 w-56" />
