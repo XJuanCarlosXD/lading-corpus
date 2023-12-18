@@ -24,7 +24,7 @@ const Service = (props) => {
   ];
   return (
     <div>
-      <div className="w-full bg-darkGray lg:p-36 md:p-32 p-8 flex flex-col justify-center items-center text-white">
+      <div className="w-full bg-darkGray lg:p-36 md:p-32 p-8 flex flex-col justify-center items-center text-white" id='service'>
         <div className="flex flex-col justify-center items-center lg:mb-10 mb-5">
           <h2 className="font-bold font-poppins text-md md:text-2xl lg:text-4xl">
             Nuestros Servicios

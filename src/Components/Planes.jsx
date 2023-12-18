@@ -80,7 +80,7 @@ const Planes = (props) => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col justify-center items-center w-full">
+        <div className="flex flex-col justify-center items-center w-full mt-32">
           <h2 className="font-bold font-poppins text-md md:text-2xl lg:text-4xl">
             Planes de Agentes de Seguridad Privada
           </h2>

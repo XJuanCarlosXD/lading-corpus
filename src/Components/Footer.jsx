@@ -22,9 +22,9 @@ const Footer = (props) => {
             </div>
           </div>
           <div className="w-full lg:w-custom">
-            <h2 className="font-bold font-poppins text-xl">Subscribete</h2>
+            <h2 className="font-bold font-poppins text-xl">Subscríbete</h2>
             <p className="lg:text-lg md:text-md text-xs">
-              Subscribete a nuestro newsletter y mantente al tanto de ofertas
+              Subscríbete a nuestro newsletter y mantente al tanto de ofertas
             </p>
             <div className="relative w-full lg:px-2 md:px-2 mt-4 lg:pr-0 md:pr-0 pr-24">
               <input

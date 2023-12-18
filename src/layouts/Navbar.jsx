@@ -5,7 +5,8 @@ const Navbar = (props) => {
   const Menulist = [
     { name: "Inicio", href: "/" },
     { name: "Sobre Nosotros", href: "#about" },
-    { name: "Servicios", href: "#planes" },
+    { name: "Servicios", href: "#service" },
+    { name: "Planes", href: "#planes" },
     { name: "Contacto", href: "#contact" },
     { name: "Cotizar", href: "/contiza" },
   ];
@@ -21,17 +22,33 @@ const Navbar = (props) => {
           </div>
           <nav className="menu flex lg:flex-row md:flex-row flex-col lg:justify-end lg:items-center md:justify-end md:items-center lg:gap-10 md:gap-5 gap-2 lg:text-sm font-bold text-gray lg:relative md:relative absolute right-0 z-10 bg-white lg:p-0 md:p-0 lg:pt-0 md:pt-0 pt-2 b-0 p-4 w-full lg:scale-100 md:scale-100 scale-0 group-hover:scale-100 transition-all">
             {Menulist.map((row, index) => (
-              <Link
-                key={index}
-                href={row.href}
-                to={row.href}
-                className={`lg:border-none md:border-none border-b border-darkGray mt-2 ${
-                  row.name === "Cotizar" &&
-                  "bg-darkGray text-white p-1.5 px-6 uppercase rounded-2xl m-0 font-bold text-center"
-                }`}
-              >
-                {row.name}
-              </Link>
+              <>
+                {row.name !== "Cotizar" ||
+                  ("Inicio" && (
+                    <a
+                      href={row.href}
+                      className={`lg:border-none md:border-none border-b border-darkGray mt-2 ${
+                        row.name === "Cotizar" &&
+                        "bg-darkGray text-white p-1.5 px-6 uppercase rounded-2xl m-0 font-bold text-center"
+                      }`}
+                    >
+                      {row.name}
+                    </a>
+                  ))}
+                {row.name === "Cotizar" ||
+                  ("Inicio" && (
+                    <Link
+                      href={row.href}
+                      to={row.href}
+                      className={`lg:border-none md:border-none border-b border-darkGray mt-2 ${
+                        row.name === "Cotizar" &&
+                        "bg-darkGray text-white p-1.5 px-6 uppercase rounded-2xl m-0 font-bold text-center"
+                      }`}
+                    >
+                      {row.name}
+                    </Link>
+                  ))}
+              </>
             ))}
           </nav>
         </div>
