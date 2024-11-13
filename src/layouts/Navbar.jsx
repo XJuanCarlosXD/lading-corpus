@@ -8,7 +8,7 @@ const Navbar = (props) => {
     { name: "Servicios", href: "#service" },
     { name: "Planes", href: "#planes" },
     { name: "Contacto", href: "#contact" },
-    { name: "Cotizar", href: "/contiza" },
+    { name: "Cotizar", href: "#/contiza" },
   ];
   return (
     <div>
