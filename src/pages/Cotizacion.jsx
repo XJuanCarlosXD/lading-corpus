@@ -1,5 +1,5 @@
 import React from "react";
-import CotizacionComponent from "../Components/Cotizacion";
+import CotizacionComponent from "../Components/Cotizacion.tsx";
 
 const Cotizacion = (props) => {
   return (
