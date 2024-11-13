@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Cotizacion from "./pages/Cotizacion";
 import Navbar from "./layouts/Navbar";
@@ -11,7 +11,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" index element={<Home />} />
-          <Route path="contiza" element={<Cotizacion />} />
+          <Route path="/contiza" element={<Cotizacion />} />
         </Routes>
       </Router>
       <Toaster
