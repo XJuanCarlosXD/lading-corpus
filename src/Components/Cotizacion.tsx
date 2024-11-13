@@ -37,7 +37,7 @@ const CotizacionComponent = () => {
   const options: OptionType[] =
     data?.services.map((row) => ({
       label: row.name,
-      value: row.id,
+      value: `${row.id}`,
     })) || [];
 
   return (
