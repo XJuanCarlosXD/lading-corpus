@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import Select from "react-select";
-import GetApiMethod from "../Class/api.class.ts";
+import GetApiMethod from "../Class/api.class";
 import { Reservations, Service } from "../Utils/type";
 
 interface OptionType {
@@ -13,7 +13,7 @@ const CotizacionComponent = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    // formState: { errors },
     control,
   } = useForm<Reservations>();
 
@@ -31,7 +31,7 @@ const CotizacionComponent = () => {
   }, [getData]);
 
   const onSubmit: SubmitHandler<Reservations> = async (data) => {
-    const api = new GetApiMethod();
+    // const api = new GetApiMethod();
     console.log(data);
   };
   const options: OptionType[] =
