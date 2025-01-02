@@ -7,7 +7,7 @@ const Contact = (props) => {
       sub: "Corpus Security",
       icon: "location.svg",
     },
-    { name: "(809) 696-4963", sub: "Número de Teléfono", icon: "phone.svg" },
+    { name: "(809) 581-6733", sub: "Número de Teléfono", icon: "phone.svg" },
     { name: "Horario", sub: "Lun-Vier 9am - 6pm", icon: "clock.svg" },
   ];
   return (
